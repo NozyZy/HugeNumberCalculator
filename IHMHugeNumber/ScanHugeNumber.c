@@ -2,9 +2,15 @@
 #include "ScanHugeNumber.h"
 
 HugeInt* scanHugeInt (void) {
-    return NULL;
+    char hugeIntInString[1000];
+    if (scanf ("%s", hugeIntInString) == EOF)
+        return NULL;
+    return createHugeIntFromString (hugeIntInString);
 }
 
 HugeUnsignedInt* scanHugeUnsignedInt (void) {
-    return NULL;
+    char hugeUnsignedIntInString[1000];
+    if (scanf ("%s", hugeUnsignedIntInString) == EOF)
+        return NULL;
+    return createHugeUnsignedIntFromString (hugeUnsignedIntInString);
 }
