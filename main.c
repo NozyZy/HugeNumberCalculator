@@ -1,6 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "..\IHMHugeNumber\ShowHugeNumber.h"
 
-int main(void){
-  printf("Hello World !\n");
-}
+int main (void) {
+ printf("Helow World!\n");
+} 
