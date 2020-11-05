@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "HugeInt.h"
 
 HugeInt* createHugeInt (void) {
@@ -58,7 +59,7 @@ int getHugeIntLength (const HugeInt* hugeInt) {
     return 0;
 }
 
-HugeInt* simplifyHugeInt (HugeInt* hugeInt) {
+HugeInt* simplifyHugeInt (const HugeInt* hugeInt) {
     if (hugeInt != NULL) {
         simplifyHugeUnsignedInt (hugeInt->absoluteValue);
     }
