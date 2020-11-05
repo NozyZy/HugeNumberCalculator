@@ -3,7 +3,7 @@
 #include "HugeInt.h"
 
 HugeInt* createHugeInt (void) {
-    HugeInt* hugeInt = malloc (sizeof (HugeInt));
+    HugeInt* hugeInt = malloc(sizeof (HugeInt));
 
     if (hugeInt != NULL) {
         HugeUnsignedInt* absoluteValue = createHugeUnsignedInt ();
