@@ -28,23 +28,23 @@ unsigned int compareHugeUnsignedInts (const HugeUnsignedInt* operand1, const Hug
 }
 
 unsigned int isHugeUnsignedIntStrictlySuperior (const HugeUnsignedInt* operand1, const HugeUnsignedInt* operand2) {
-    return NULL;
+    return 0;
 }
 
 unsigned int isHugeUnsignedIntSuperior (const HugeUnsignedInt* operand1, const HugeUnsignedInt* operand2) {
-    return NULL;
+    return 0;
 }
 
 unsigned int isHugeUnsignedIntEqual (const HugeUnsignedInt* operand1, const HugeUnsignedInt* operand2) {
-    return NULL;
+    return 0;
 }
 
 unsigned int isHugeUnsignedIntInferior (const HugeUnsignedInt* operand1, const HugeUnsignedInt* operand2) {
-    return NULL;
+    return 0;
 }
 
 unsigned int isHugeUnsignedIntStrictlyInferior (const HugeUnsignedInt* operand1, const HugeUnsignedInt* operand2) {
-    return NULL;
+    return 0;
 }
 
 HugeUnsignedInt* createHugeUnsignedIntFromPowerOf10 (const HugeUnsignedInt* exponent) {

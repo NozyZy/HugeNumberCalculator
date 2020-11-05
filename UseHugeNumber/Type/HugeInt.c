@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "HugeInt.h"
 
 HugeInt* createHugeInt (void) {
-    HugeInt* hugeInt = malloc (sizeof (HugeInt));
+    HugeInt* hugeInt = malloc(sizeof (HugeInt));
 
     if (hugeInt != NULL) {
         HugeUnsignedInt* absoluteValue = createHugeUnsignedInt ();
@@ -58,7 +59,7 @@ int getHugeIntLength (const HugeInt* hugeInt) {
     return 0;
 }
 
-HugeInt* simplifyHugeInt (HugeInt* hugeInt) {
+HugeInt* simplifyHugeInt (const HugeInt* hugeInt) {
     if (hugeInt != NULL) {
         simplifyHugeUnsignedInt (hugeInt->absoluteValue);
     }
