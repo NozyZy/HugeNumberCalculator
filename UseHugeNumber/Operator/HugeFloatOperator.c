@@ -60,7 +60,7 @@ HugeFloat* multiplyHugeFloat (const HugeFloat* operand1, const HugeFloat* operan
     return result;
 }
 
-HugeFloat* simplifyHugeFloat (HugeFloat* hugeFloat) {
+HugeFloat* simplifyHugeFloat (const HugeFloat* hugeFloat) {
     if (hugeFloat != NULL) {
         simplifyHugeInt (hugeFloat->significand);
         simplifyHugeInt (hugeFloat->exponent);
